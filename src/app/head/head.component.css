@@ -1,0 +1,14 @@
+.head{
+    max-width: 600px;
+    background-color: darkblue;
+    margin: auto;
+    color: white;
+
+
+    padding-left: 119px ;
+    padding-top: 1px;
+    padding-bottom: 0.5px;
+    font-size: 12px;
+    font-family: 'Times New Roman', Times, serif;
+    box-shadow: 2px 2px 10px rgba(0,0,0,0.5);
+}

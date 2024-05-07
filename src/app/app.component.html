@@ -1,0 +1,42 @@
+
+<div class="outer">
+
+  <app-head></app-head>
+<div class="container">
+
+
+<div class="hero">
+  <form>
+    <label>First Name :</label>
+    <input type="text" [(ngModel)]="data.firstname" placeholder="Enter First Name" name="First Name">
+    <br>
+    <label>Last Name :</label>
+    <input type="text" required [(ngModel)]="data.lastname" placeholder="Enter Last Name" name="Last Name">
+    <br>
+
+    <label>Email :</label>
+    <input type="text" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required [(ngModel)]="data.email"
+      placeholder="Enter Email" name="Email">
+    <br>
+    <label>Phone :</label>
+    <input type="number"  required [(ngModel)]="data.phone" placeholder="Enter Phone Number" name="Phone">
+    <br>
+    <label>Age :</label>
+    <input type="number"  required [(ngModel)]="data.age" placeholder="Enter Age" name="Age">
+    <br>
+    
+    <label>Password :</label>
+    <input type="password" pattern="^(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[!@#$%^&*_=+-]).{8,12}$" required
+      [(ngModel)]="data.password" placeholder="Enter Password" name="Password">
+    <br>
+    <label>Re-Enter Password :</label>
+    <input type="password" pattern="^(?=.[a-z])(?=.[A-Z])(?=.[0-9])(?=.[!@#$%^&*_=+-]).{8,12}$" required
+      [(ngModel)]="data.reenterpassword" placeholder=" Re-Enter Password" name="Re-Enter Password">
+    <br>
+    
+    <button type="button" class="btn btn-success" (click)="userLogin()">Submit</button>
+
+  </form>
+</div>
+</div>
+</div>
